@@ -29,6 +29,8 @@ public class stepDefinition extends Utils {
 	 resspec =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		 res=given().spec(requestSpecification())
 		.body(Data.addPlacePayload(name,language,address));
+		 System.out.println("This is just for checking for GIT");
+		 System.out.println("This is just for checking for GIT");
 	}
 	@When("User Calls {string} With {string} http request")
 	public void user_calls_with_http_request(String resource, String method) {
